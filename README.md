@@ -21,4 +21,12 @@ The `master` branch of the project is not used.
 
 Patches are prepared and maintained with one patch per branch.
 
-? Should a PR also reference its base version in its name. 
+# Is this a fork of Elm?
+
+This is a *release branch* of Elm. It will only apply patches to Elm core packages that do not
+change their APIs. The aim of this GitHub organization is to keep Elm core packages up to
+date with their pull requests. This is so that
+
+  * Elm users can get the core packages with fixes applied.
+  * Elm users have a process for getting PRs into these packages, without being blocked
+    on the official releases.
