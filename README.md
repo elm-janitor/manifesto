@@ -30,3 +30,9 @@ date with their pull requests. This is so that
   * Elm users can get the core packages with fixes applied.
   * Elm users have a process for getting PRs into these packages, without being blocked
     on the official releases.
+    
+The difference between a fork and a release branch, is that the release branch will not try to
+lead the design of these packages. It will be ahead of the upstream in terms of patches. All
+patches will be made available to the upstream for consideration for inclusion. The main aim
+of a release branch is to fix defects that are fed back from real world use of the packages,
+in a timely manner.
