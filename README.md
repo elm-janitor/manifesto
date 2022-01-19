@@ -51,3 +51,6 @@ How to use an elm-janitor patched core package in an Elm project.
 
 How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
 rebased correctly. Link to the git help doc.
+
+Get involved in reviewing and merging patches. General approach to managing this
+github org.
