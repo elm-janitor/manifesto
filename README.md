@@ -23,16 +23,31 @@ Patches are prepared and maintained with one patch per branch.
 
 # Is this a fork of Elm?
 
-This is a *release branch* of Elm. It will only apply patches to Elm core packages that do not
-change their APIs. The aim of this GitHub organization is to keep Elm core packages up to
-date with their pull requests. This is so that
+This is a *release branch* of Elm. It will only apply patches to Elm core
+packages that do not change their APIs. The aim of this GitHub organization is
+to keep Elm core packages up to date with their pull requests. This is so that
 
   * Elm users can get the core packages with fixes applied.
-  * Elm users have a process for getting PRs into these packages, without being blocked
-    on the official releases.
-    
-The difference between a fork and a release branch, is that the release branch will not try to
-lead the design of these packages. It will be ahead of the upstream in terms of patches. All
-patches will be made available to the upstream for consideration for inclusion. The main aim
-of a release branch is to fix defects that are fed back from real world use of the packages,
-in a timely manner.
+  * Elm users have a process for getting PRs into these packages, without being
+    blocked on the official releases.
+
+The difference between a fork and a release branch, is that the release branch
+will not try to lead the design of these packages. It will be ahead of the
+upstream in terms of patches. All patches will be made available to the upstream
+for consideration for inclusion. The main aim of a release branch is to fix
+defects that are fed back from real world use of the packages, in a timely
+manner.
+
+# Work in progress.
+
+Topics this README needs to cover or direct the reader to are:
+
+The classification levels of patches. Link to the bug analysis sheet.
+
+How to make a PR and get it include in elm-janitor. The discord topic to discuss
+inclusion of the patch.
+
+How to use an elm-janitor patched core package in an Elm project.
+
+How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
+rebased correctly. Link to the git help doc.
