@@ -50,8 +50,7 @@ Appendix at the end of this README for some more detailed notes.
 7. Language Semantics
 
 A sheet of analysed PRs is maintained here,
-[Elm Bug Fixes]
-(https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
+[Elm Bug Fixes](https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
 
 There is a column in the sheet to mark some PRs as "Controversial", which might
 happen if Evan has commented that a particular solution may be undesirable.
