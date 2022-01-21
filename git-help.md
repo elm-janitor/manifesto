@@ -90,12 +90,13 @@ again.
 
 # To add the Pull Request to the stack.
 
-Check your patch will merge cleanly onto the patch stack.
+Check your patch will merge cleanly onto the patch stack. It should do, since
+any rebasing (above) will already have found any conflicts.
 
     git checkout stack-1.0.5
     git merge --no-commit --no-ff pr-992
 
-You may find some conflicts and need to go back and sort them out. Assuming the
+If you do find some conflicts go back and sort them out. Assuming the
 above went cleanly, you can push the patch.
 
     git push origin pr-992
