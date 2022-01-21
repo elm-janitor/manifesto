@@ -13,6 +13,25 @@ Work in a local branch until you have a patch absolutely correct. That way, you
 can always delete it without rewriting the git history on GitHub where others
 can see it.
 
+??? Add requirement on commit message to reference the pr.
+commit -n "fixes elm/core#123"
+
+# Git Branch Structure
+
+Using `elm-core` as an example, the following branch structure is used in
+the various core patching projects.
+
+The `master` branch of the project is not used.
+
+| Branch | Description |
+| --- | --- |
+| `stack-1.0.5` | The working branch used to assemble a patch set on top of latest elm/core. |
+| `upstream-master` | Tracks upstream elm/core master. |
+| `upstream-1.0.5` | Tracks an upstream release tag, in this case 1.0.5 |
+| `pr-1033` | Tracks an upstream pull request, in this case \#1033. |
+
+Patches are prepared and maintained with one patch per branch.
+
 # To set up a new forked core repo.
 
 Using elm/core version 1.0.5 as an example.

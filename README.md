@@ -5,22 +5,6 @@ Elm core packages by applying patches to them. The patch stack will always
 be applied on top of the latest official release of the Elm core packages,
 with patches removed from the stack if they become part of the official release.
 
-# Git Branch Structure
-
-Using `elm-core` as an example, the following branch structure is used in
-the various core patching projects.
-
-The `master` branch of the project is not used.
-
-| Branch | Description |
-| --- | --- |
-| `stack-1.0.5` | The working branch used to assemble a patch set on top of latest elm/core. |
-| `upstream-master` | Tracks upstream elm/core master. |
-| `upstream-1.0.5` | Tracks an upstream release tag, in this case 1.0.5 |
-| `pr-1033` | Tracks an upstream pull request, in this case \#1033. |
-
-Patches are prepared and maintained with one patch per branch.
-
 # Is this a fork of Elm?
 
 This is a *release branch* of Elm. It will only apply patches to Elm core
@@ -38,14 +22,43 @@ for consideration for inclusion. The main aim of a release branch is to fix
 defects that are fed back from real world use of the packages, in a timely
 manner.
 
+# What will get fixed here?
+
+Pull requests to the Elm core packages, are evaluated to assign them to one of
+the following level. The level names are hopefully self explanatory, see the
+Appendix at the end of this README for some more detailed notes.
+
+1. Doc Fixes
+2. Performance Improvements
+3. Runtime Bug Fixes
+4. API Changes to Implementation
+5. API New Functions
+6. API Changes
+7. Language Semantics
+
+A sheet of analysed PRs is maintained here, [Elm Bug Fixes](https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
+
+There is a column in the sheet to mark some PRs as "Controversial", which might
+happen if Evan has commented that a particular solution may be undesirable.
+
+Anything at levels 1-4 is acceptable for fixing as part of this maintenance work.
+Level 1 is regarded as low priority.
+Level 5 is backwards compatible, but code using it would not be able to revert
+to the original APIs without change. Level 5 is therefore currently out of scope.
+
+# How do I get my patch included?
+
+Make a PR against whichever elm/ core project you want to make a change to.
+
+Post a link to your PR to the [Incremental Elm #elm-janitor](https://discord.com/channels/534524278847045633/933054571981471755) channel. If you need an invite to join the Discord server,
+use this link here to sign up: [Incremental Elm Discord Invite](https://discord.com/invite/NZUYqYPYnh)
+
+We will assess your PR and assign it a level as described above, and add it to
+the bug tracking sheet.
+
 # Work in progress.
 
 Topics this README needs to cover or direct the reader to are:
-
-The classification levels of patches. Link to the bug analysis sheet.
-
-How to make a PR and get it include in elm-janitor. The discord topic to discuss
-inclusion of the patch.
 
 How to use an elm-janitor patched core package in an Elm project.
 
@@ -54,3 +67,36 @@ rebased correctly. Link to the git help doc.
 
 Get involved in reviewing and merging patches. General approach to managing this
 github org.
+
+
+### 1. Doc Fixes
+
+Changes to the docs only, no code changes.
+
+### 2. Performance Improvements
+
+Changes that only affect runtime performance. Ideally a benchmark would also be
+provided to back up the claim.
+
+### 3. Runtime Bug Fixes
+
+Changes that eliminate one or more runtime exceptions.
+
+### 4. API Changes to Implementation
+
+Changes to the implementation that fix some bug other than a runtime exception.
+Sometimes it can be debatable if something if a bug or a feature. This can be
+discussed on the #elm-janitor channel.
+
+### 5. API New Functions
+
+Changes that add new functions to elm/ core APIs, but do not change any existing
+APIs.
+
+### 6. API Changes
+
+Changes to elm/ core APIs that would require a bump to the major version.
+
+### 7. Language Semantics
+
+Changes to the Elm language itself.
