@@ -53,7 +53,8 @@ A sheet of analysed PRs is maintained here,
 [Elm Bug Fixes](https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
 
 There is a column in the sheet to mark some PRs as "Controversial", which might
-happen if Evan has commented that a particular solution may be undesirable.
+happen if Evan has commented that a particular solution may be undesirable. This
+flag is used to mark things that are too controversial to merge.
 
 Anything at levels 1-4 is acceptable for fixing as part of this maintenance work.
 Level 1 is regarded as low priority.
@@ -76,6 +77,8 @@ the bug tracking sheet.
 ?? How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
 rebased correctly. Link to a separate guide. Should be fairly short though, maybe
 include instructions directly here?
+
+# Appendix - Bug Fix Impact Levels
 
 ### 1. Doc Fixes
 
