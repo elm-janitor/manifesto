@@ -1,3 +1,16 @@
+# Work in progress.
+
+Topics this README needs to cover or direct the reader to are:
+
+How to use an elm-janitor patched core package in an Elm project. Peters
+instructions. Future plans in this area - someone needs to write a tool to
+automate distribution/install of these patched versions.
+
+Get involved in reviewing and merging patches. General approach to managing this
+github org. Elm users are fairly agreeable, so I think we can resolve most things
+by talking in the elm-janitor channel. Feel free to make suggestions or ask for
+changes to the docs in this manifesto.
+
 # Elm Core Library Maintenance
 
 `elm-janitor` is a group of Elm users that are interested in maintaining the
@@ -36,7 +49,9 @@ Appendix at the end of this README for some more detailed notes.
 6. API Changes
 7. Language Semantics
 
-A sheet of analysed PRs is maintained here, [Elm Bug Fixes](https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
+A sheet of analysed PRs is maintained here,
+[Elm Bug Fixes]
+(https://docs.google.com/spreadsheets/d/12Jz3CI4CFomF6aS0blMeQIzDpAh2PiqgxlxkJhn7mOg/edit?usp=sharing).
 
 There is a column in the sheet to mark some PRs as "Controversial", which might
 happen if Evan has commented that a particular solution may be undesirable.
@@ -50,24 +65,18 @@ to the original APIs without change. Level 5 is therefore currently out of scope
 
 Make a PR against whichever elm/ core project you want to make a change to.
 
-Post a link to your PR to the [Incremental Elm #elm-janitor](https://discord.com/channels/534524278847045633/933054571981471755) channel. If you need an invite to join the Discord server,
-use this link here to sign up: [Incremental Elm Discord Invite](https://discord.com/invite/NZUYqYPYnh)
+Post a link to your PR to the
+[Incremental Elm #elm-janitor](https://discord.com/channels/534524278847045633/933054571981471755)
+channel. If you need an invite to join the Discord server, use this link here to
+sign up:
+[Incremental Elm Discord Invite](https://discord.com/invite/NZUYqYPYnh)
 
 We will assess your PR and assign it a level as described above, and add it to
 the bug tracking sheet.
 
-# Work in progress.
-
-Topics this README needs to cover or direct the reader to are:
-
-How to use an elm-janitor patched core package in an Elm project.
-
-How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
-rebased correctly. Link to the git help doc.
-
-Get involved in reviewing and merging patches. General approach to managing this
-github org.
-
+?? How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
+rebased correctly. Link to a separate guide. Should be fairly short though, maybe
+include instructions directly here?
 
 ### 1. Doc Fixes
 
