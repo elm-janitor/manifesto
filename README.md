@@ -6,10 +6,6 @@ How to use an elm-janitor patched core package in an Elm project. Peters
 instructions. Future plans in this area - someone needs to write a tool to
 automate distribution/install of these patched versions.
 
-Get involved in reviewing and merging patches. General approach to managing this
-github org. Elm users are fairly agreeable, so I think we can resolve most things
-by talking in the elm-janitor channel. Feel free to make suggestions or ask for
-changes to the docs in this manifesto.
 
 # Elm Core Library Maintenance
 
@@ -74,9 +70,20 @@ sign up:
 We will assess your PR and assign it a level as described above, and add it to
 the bug tracking sheet.
 
-?? How to prepare a patch for inclusion. Formatting, minimalism, ensuring it is
-rebased correctly. Link to a separate guide. Should be fairly short though, maybe
-include instructions directly here?
+To keep the patches clean, please ensure your patch follows the style of the
+code being modified, and does not include any changes to whitespace of code
+outside of the code being modified. In particular, note that Evan does not
+use elm-format on the core packages, but prefers to use a 2 space indent.
+
+# How do I get involved in reviewing and merging patches?
+
+This github organization will be managed through dicussion on the
+[Incremental Elm #elm-janitor](https://discord.com/channels/534524278847045633/933054571981471755)
+channel. Anyone on that channel can ask to join the org as a patch maintainer.
+
+This [guide to reviewing and merging patches for maintainers](git-help.md)
+should be followed.
+
 
 # Appendix - Bug Fix Impact Levels
 
