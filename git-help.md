@@ -96,6 +96,15 @@ recommend squashing any reformatting.
 
 Will let you reorganize the commit history.
 
+At the top of the commit message reference the PR and any related issues that 
+the patch fixes. For example PR #29 in elm/parser had these lines added:
+
+    fixes elm/parser#29
+    fixes elm/parser#9
+
+The first references the original PR. The second references Issue #9. This will
+help when it comes to writing some release notes.
+
 # If you made a mistake.
 
 If things end up in a mess and you just want to try again making a clean patch.
